@@ -1,11 +1,5 @@
 <?php
 
-// These are the specifics for the app you register
-// Define them in whatever requires this library
-// const CLIENT_ID = "your client id";
-// const CLIENT_SECRET = "your client secret";
-
-
 class EveCrest {
         // Full URL with protocol of where oauth happens
         public $sso_url = "https://login.eveonline.com/oauth/token";
