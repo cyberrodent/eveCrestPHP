@@ -36,6 +36,16 @@ To use these scripts you will also need to register an app with CCP and
 obtain a CLIENT_ID and CLIENT_SECRET that will need to be entered into
 __config.php.
 
+## Setup
+
+    1. Download.
+    2. Composer install
+    3. Copy __config.php.ORIGINAL to __config.php and add you secrets.
+    4. cd sso-setup.  Add credentials where needed run php eve-sso to create
+       a serialized refresh token.
+    5. See app.php for basic usage.
+    
+
 ## API
 
 In the /lib directory we create class files for each domain of the Crest
@@ -73,7 +83,6 @@ can be improved.
 
 Add the repository and the pacakage to your projects composer.json:
 
-
 ```
 "repositories": [
   {
@@ -84,7 +93,7 @@ Add the repository and the pacakage to your projects composer.json:
       "version": "0.0.1",
       "type": "package",
       "source": {
-        "url": "git@bitbucket.org:cyberrodent/eve-crest.git",
+        "url": "WHEREEVER-YOU-HOST-YOUR-REPO",
         "type": "git",
         "reference": "master"
       }
@@ -101,13 +110,16 @@ Add the repository and the pacakage to your projects composer.json:
 },
 ```
 ```
-and invoke composer install.  
+and invoke ```composer install```  
 
-You may need to work out the loading and how you want to provide access
-to credentials, make sure the cache directory is writeable etc.
+You may need to work out the loading in your app and how you want to
+provide access to credentials, make sure the cache directory is
+writeable etc.  
 
 While not at all seamless, this can be done you can build other
 applications on top of this.
+
+Patches welcome and Fly Safe.
 
 
 

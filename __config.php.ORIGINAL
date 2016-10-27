@@ -1,5 +1,9 @@
 <?php
 
+// COPY THIS TO __.config.php after you add your secrets here
+
+
+
 // Configure to load classes from a relative `lib` directory
 spl_autoload_register(function ($class_name) {
             include __DIR__ . "/lib/" . lcfirst($class_name) . '.php';
