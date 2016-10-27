@@ -36,8 +36,7 @@ bidding.  Here is an example of fetching a list of all the MarketGroups.
 The core system offers a cache to reduce pressure on the upstream
 service.  This is also to provide some level of resilience should the
 upstream be unavailable, requests can still be answered from the cache.
-The cache is defined and can be tweaked a bit in in
-```lib/eveCrest.php```
+The cache is defined and can be tweaked a bit in in lib/eveCrest.php.
 
 The core system can return the JSON directly or it can decode it and
 return a native php datastructure.
