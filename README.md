@@ -72,15 +72,13 @@ it will get the job done.  Patches welcome :)
 
 ## API
 
-In the /lib directory we create class files for each domain of the Crest
-API. (is "domain" the right word here?)
+In the /lib directory we create class files for each domain (is "domain"
+the right word here?) of the Crest API. 
 
-``` /lib/character.php ```
+#### /lib/character.php 
 
 Each of these files provides a class with static methods to wrap up API
 calls and do any pre-or-post processing.
-
-
 
 ```
 <?php
@@ -91,10 +89,7 @@ class character {
             return $i;
     }
 }
-
-
 ```
-
 
 ## Composer
 
@@ -133,7 +128,7 @@ Add the repository and the pacakage to your projects composer.json:
   "cyberrodent/eve-crest" : "0.0.1"
 },
 ```
-```
+
 and invoke composer install  
 
 You may need to work out the loading in your app and how you want to
@@ -146,7 +141,7 @@ applications on top of this.
 
 
 Patches welcome and Fly Safe.
-
+ cyberRodent
 
 
 
