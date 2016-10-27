@@ -63,7 +63,20 @@ refresh token on disk in .eve_sso_refresh_token.txt.
 
 To use these scripts you will also need to register an app with CCP and
 obtain a CLIENT_ID and CLIENT_SECRET that will need to be entered into
-__config.php.
+__config.php.  https://developers.eveonline.com/ is where you can create
+and register apps.
+
+Once you have your Eve 3rd pary application created you can take the
+APPLICATION SETTINGS and paste them into both of the files in the
+sso-setup directory. You will need a webserver that you can access for
+the callback URL. Enter the address of your locally served eve-sso.php
+as the callback. Point your webserver to the sso-setup directory and
+load up /sso.php.  This will redirect you to the SSO login screen where
+you can grant access to this app for your account. Once you grant the
+app access your will be redirected to the eve-sso.php page locally
+served where you can (have to) copy the serialized data from the web
+page and save it to a file called .eve_sso_refresh_token.txt in the top
+level of this project.
 
 This is all a bit of a pain but I suppose if you are this far into this
 you know about these things.  The tooling here is not at all slick but
