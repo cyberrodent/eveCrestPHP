@@ -134,7 +134,7 @@ Add the repository and the pacakage to your projects composer.json:
 },
 ```
 ```
-and invoke ```composer install```  
+and invoke composer install  
 
 You may need to work out the loading in your app and how you want to
 provide access to credentials, make sure the cache directory is
