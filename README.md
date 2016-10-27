@@ -74,9 +74,9 @@ as the callback. Point your webserver to the sso-setup directory and
 load up /sso.php.  This will redirect you to the SSO login screen where
 you can grant access to this app for your account. Once you grant the
 app access your will be redirected to the eve-sso.php page locally
-served where you can (have to) copy the serialized data from the web
-page and save it to a file called .eve_sso_refresh_token.txt in the top
-level of this project.
+served where you can (have to) copy the refresh token from the web
+page and serialize it into a file called .eve_sso_refresh_token.txt in
+the top level of this project.
 
 This is all a bit of a pain but I suppose if you are this far into this
 you know about these things.  The tooling here is not at all slick but
